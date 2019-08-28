@@ -30,6 +30,7 @@ public class MyClass {
 		// Append the specific element to the end of the list
 		a.add("Hello");
 		b.add("World!");
+		t.add("TreeSet");
 
 		for (int i = 0; i < a.size(); i++) {
 			// Print a returned element at the specified position in the list
@@ -39,5 +40,7 @@ public class MyClass {
 		for (int i = 0; i < b.size(); i++) {
 			System.out.println(b.get(i));
 		}
+		
+		System.out.println(t.first());
 	}
 }
