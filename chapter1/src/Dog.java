@@ -10,12 +10,18 @@ public class Dog {
 	// A file can have more than one nonpublic class.
 	private class CatDog {
 		CatDog() {
-			System.out.println("Meow Woof");
+		}
+		
+		public String toString() {
+			return "Meow Woof";
 		}
 	}
 
 	public static void main(String[] args){
 		Dog d = new Dog();
 		Dog.CatDog cd = d.new CatDog();
+		
+		// Override toString method
+		System.out.println(cd);
 	}
 }
