@@ -5,7 +5,7 @@ package cert;
 // is on the class. You must never, ever, ever mark a class as both final 
 // and abstract.
 
-public strictfp final class FinalBeverage {
+public final strictfp class FinalBeverage {
 	
 	// For the exam, you need to know that strictfp is a keyword that can be 
 	// used to modify a class of a method, but never a variable. Marking a
