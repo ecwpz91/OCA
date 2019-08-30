@@ -8,9 +8,12 @@ import java.util.TreeMap;
 // and abstract. An abstract class can never be instantiated.
 
 public abstract strictfp class AbstractBeverage {
+	@SuppressWarnings("unused")
 	private final String TWELVE_FL_OZ = "Tall";
 	
+	@SuppressWarnings("unused")
 	private double price;
+	@SuppressWarnings("unused")
 	private int size;
 	private String name;
 	
@@ -19,6 +22,11 @@ public abstract strictfp class AbstractBeverage {
 	// then both the method and the class must be marked abstract.
 	public abstract TreeMap<Integer, String> getSize();
 	
+	// By putting nonabstract methods in an abstract class, you give all 
+	// concrete subclasses (concrete just means not abstract) inherited method
+	// implementations. Coding with abstract class types (including interfaces)
+	// lets you take advantage of polymorphism, and give you the greatest
+	// degree of flexibility and extensibility.
 	public String toString() {
 		return name;
 	}
