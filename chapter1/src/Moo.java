@@ -26,11 +26,10 @@ class Cow extends Zoo {
 	}	
 	
 	public void useAZoo() {
-		Zoo z = new Zoo();
 		// If the proceeding line compiles Moo has 
 		// access to the Zoo class
 		// But... does it have access to the coolMethod()?
-		System.out.println("A Cow says " + z.coolMethod());
+		System.out.println("A Cow says " + coolMethod());
 		// The proceeding line works because Moo can
 		// access the public method
 	}
