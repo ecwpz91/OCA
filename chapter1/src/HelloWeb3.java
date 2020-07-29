@@ -11,6 +11,9 @@ public class HelloWeb3 extends Applet implements MouseMotionListener, ActionList
 
 	public void init() {
 		theMessage = getParameter("message");
+		// The new operator provides the general mechanism for instantiating objects.
+		// It arranges for Java to allocate storage for the object and then call the
+		// constructor method of the objects' class to initialize it.
 		theButton = new Button("change Color");
 		add(theButton);
 		addMouseMotionListener(this);
