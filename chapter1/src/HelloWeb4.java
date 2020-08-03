@@ -70,7 +70,7 @@ public class HelloWeb4 extends Applet implements MouseMotionListener, ActionList
 
 	public void stop() {
 		if ( blinkThread != null) {
-			blinkThread.stop();
+			blinkThread.stop();  // UNSAFE! --> https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html
 			blinkThread = null;
 		}
 	}
