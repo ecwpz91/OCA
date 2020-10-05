@@ -1,7 +1,7 @@
 <project name="testwrite" default="jars" basedir=".">
 
 	<property name="src-dir" value="src"/>
-	<property name="build-dir" value="classes"/>
+	<property name="build-dir" value="bin"/>
 	<property name="unsigned-jar-file" value="UnsignedTestWrite.jar"/>
 	<property name="signed-jar-file" value="SignedTestWrite.jar"/>
 
