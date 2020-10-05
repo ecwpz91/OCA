@@ -1,0 +1,9 @@
+keystore "file:/home/USER_NAME/.config/icedtea-web/security/trusted.cacerts", "JKS";
+
+grant {
+};
+
+grant signedBy "jonathan" {
+  permission java.io.FilePermission "./testwrite.xxx", "write";
+};
+

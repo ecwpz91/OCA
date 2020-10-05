@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	<title>Unsigned JAR</title>
+</head>
+
+<body>
+	<h1>Unsigned TestWrite JAR</h1>
+
+	<font size="-1">
+		Note for readers of <em>Learning Java, First Edition</em>.
+		This example has been updated to use the Java plug-in version 1.4. The
+		new plug-in allows users to accept signed applets automatically, without
+		requiring local installation of keys or certificates. Readers looking for
+		the older examples can find them at:
+		<a href="http://examples.oreilly.com/learnjava/">
+			http://examples.oreilly.com/learnjava/</a>
+	</font>
+	<p>
+
+		<applet code=TestWrite archive=UnsignedTestWrite.jar width=300 height=200>
+			<param name="CODE" value="TestWrite">
+			<param name="ARCHIVE" value="UnsignedTestWrite.jar">
+			<param name="type" value="application/x-java-applet;version=1.4">
+		</applet>
+</body>
+
+</html>
